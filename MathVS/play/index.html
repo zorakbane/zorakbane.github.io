@@ -48,15 +48,16 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/WebGL.loader.js";
+      var cacheBust = "20261117.2256";
+      var loaderUrl = buildUrl + "/WebGL.loader.js?v=" + cacheBust;
       var config = {
-        dataUrl: buildUrl + "/WebGL.data.unityweb",
-        frameworkUrl: buildUrl + "/WebGL.framework.js.unityweb",
-        codeUrl: buildUrl + "/WebGL.wasm.unityweb",
+        dataUrl: buildUrl + "/WebGL.data.unityweb?v=" + cacheBust,
+        frameworkUrl: buildUrl + "/WebGL.framework.js.unityweb?v=" + cacheBust,
+        codeUrl: buildUrl + "/WebGL.wasm.unityweb?v=" + cacheBust,
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Rollback Games",
         productName: "MathVS",
-        productVersion: "0.1.0",
+        productVersion: "20261117.2256",
         showBanner: unityShowBanner,
         matchWebGLToCanvasSize: true,
         devicePixelRatio: 1
